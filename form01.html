@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="form01.css">
+</head>
+<body>
+    <form method="POST" action="https://webcetb.org/php/echo/">
+
+        <label for="name"> Name :</label>
+            <input id="name" name="name" type="text" readonly value="Eamonn" ><br>
+        
+        <label for="address">Address :</label>
+            <input id="address" name="address" 
+            value="Home" disabled type="text"><br/>
+        
+        <label for="phone"> Phone :</label>
+            <input id="phone" name="phone"
+            autofocus
+            required 
+            size="15"
+            maxlength="3"
+            pattern="[A-Za-z]{3}"
+            placeholder="Enter your telephone number"
+            type="tel"><br/>
+        
+        <label for="gender"> Gender:</label> 
+            Male <input name="gender" type="radio" value="male">
+            Female <input name="gender" type="radio" value="female">
+            Fluid <input name="gender" type="radio" value="fluid"><br>
+
+        <label for="discount">Discount</label> 
+            Yes <input name="discount" type="radio" value="yes">
+            No <input name="discount" type="radio" value="no"><br>
+
+        <label for="correct"> Correct?</label>
+            <input id="correct" name="correct" type="checkbox"><br>
+
+        <label for="password"> Password</label>
+            <input id="password" name="password" type="password"><br>
+       
+        <label for="age_range"> Age Range:</label>
+            <input id="age_range" name="age_range"
+            type="range" min="10" max="20" value="15"
+            
+            ><br> 
+
+        <label for="rooms"> Rooms :</label>
+            <input id="rooms" name="rooms"
+            step="2" 
+            type="number"  
+            min="1" max="5" 
+            value="5"><br>
+
+        <label for="email"> Email</label>
+            <input id="email" name="email" type="email"  ><br>
+        <label for="website"> Website : </label>
+            <input id="website" name="website" type="url"  > <br>
+
+        <label for="color">Color:</label> 
+            <input id="color" name="color" type="color"> <br>
+        
+        <label for="date"> Date:</label>
+            <input id="date" name="date" type="date" ><br>
+
+        <label for="datetime"> DateTime??:</label>
+            <input id="datetime" name="datetime" type="datetime-local" ><br>
+        
+        <label for="time">Time:</label>
+            <input id="time" name="time"  type="time" ><br>
+
+        <label for="month"> Month??: </label>
+            <input id="month" name="month" type="month" /><br>
+        <label for="week"> Week:</label> 
+            <input id="week" name="week" type="week" /><br>
+
+        <label for="oars"> Image: </label> 
+            <input id="oars" name="oars" type="image"  src="oars.png" height="120px" width="120px" ><br>
+
+        <input type="hidden" name="user_id" value="123456789lgasdfgagfasdfkasgfasgdk">
+
+        <label for="notes"> Notes: </label>
+            <textarea id="notes" name="notes" cols="30" rows="10">This is some text</textarea><br>
+        
+        <datalist id="airlines">
+            <option value="Aer Lingus"></option>
+            <option value="British Airways"></option>
+            <option value="Quantas"></option>
+            <option value="Ryanair"></option>
+        </datalist>
+        <label for="airline"> Airline: </label>
+            <input name="airline" name="airline" list="airlines"><br>
+        
+        <label for="airline2">Airline</label> 
+
+        <select id="airline2" name="airline2[]" multiple>
+            <option value="00">Select an Airline</option>
+            <option value="EI">Aer Lingus</option>
+            <option value="BA">British Airways</option>
+            <option value="QF">Quantas</option>
+            <option value="FR">Ryanair</option>
+        </select>     <br>   
+
+        <button onclick="myFunction()">This is a button</button><br>
+
+        <input name="submit" type="submit" value="Send">
+        <input name="bollix" type="reset">
+    </form>
+</body>
+<script>
+    function myFunction() {
+        alert("I've been clicked!");
+        return false;
+    }
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="form01.css">
+</head>
+<body>
+    <form method="POST" action="https://webcetb.org/2019/forms/sendmail.php">
+
+        <label for="name"> Name :</label>
+            <input id="name" name="name" 
+            type="text" value="" ><br>
+        
+        <label for="email"> Email</label>
+            <input id="email" name="email" 
+            type="email"  ><br>
+            
+        <label for="notes"> Message: </label>
+            <textarea id="notes" name="comment" cols="30" rows="10">This is some text</textarea><br>
+
+        <input type="hidden" name="sourceUrl" 
+        value="__template.html">
+        
+        
+        <input name="submit" type="submit" value="Send">
+        <input name="bollix" type="reset">
+    </form>
+</body>
+<script>
+    function myFunction() {
+        alert("I've been clicked!");
+        return false;
+    }
+</script>
+</html>
