@@ -14,14 +14,17 @@ error_reporting(E_ALL);
 
 function input($label,$name,$type="text",$value="") {
     label($label,$name);
-    $html = "<input id=\"$name\" name=\"$name\" type=\"$type\" value=\"$value\" />\r\n";
+    $html = "<input id=\"$name\" name=\"$name\" 
+            type=\"$type\" value=\"$value\" />\r\n";
+
     $html .= "<br/>\r\n";
     echo $html;
 }
 
 function radio($name,$prompt,$value) {
 
-    $html = "$prompt<input id=\"$name\" name=\"$name\" type=\"radio\" value=\"$value\" />\r\n";
+    $html = "$prompt<input id=\"$name\" name=\"$name\" 
+            type=\"radio\" value=\"$value\" />\r\n";
     // $html .= "<br/>\r\n";
     echo $html;
 }
@@ -45,12 +48,15 @@ function br() {
   
     input("Name:","name");
     input("Color","color","color","#090909");
+    // this is a change
 
     label("Gender","gender");
     radio("gender","Male","male");
     radio("gender","Female","female");
     radio("gender","Fluid","fluid");
     br();
+
+
 
     input("","submit","submit","Submit");
 
